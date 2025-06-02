@@ -10,25 +10,25 @@ const projects = [
     image: "../src/assets/portfolio1.jpeg",
     title: "Smart Agency Website",
     subtitle: "Marketing Portfolio",
-    link: "https://yourproject1.com",
+    link: "https://google.com",
   },
   {
     image: "../src/assets/portfolio2.jpeg",
     title: "E-Commerce Platform",
     subtitle: "Fullstack Com merce",
-    link: "https://yourproject2.com",
+    link: "https://google.com",
   },
   {
     image: "../src/assets/portfolio3.jpeg",
     title: "Portfolio Redesign",
     subtitle: "Personal Showcase",
-    link: "https://yourproject3.com",
+    link: "https://google.com",
   },
   {
     image: "../src/assets/portfolio4.jpeg",
     title: "Portfolio Redesign",
     subtitle: "Personal Showcase",
-    link: "https://yourproject3.com",
+    link: "https://google.com",
   },
 ];
 
