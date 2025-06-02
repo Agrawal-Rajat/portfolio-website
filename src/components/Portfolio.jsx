@@ -7,25 +7,25 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 const projects = [
   {
-    image: "../src/assets/portfolio1.jpeg",
+    image: "portfolio1.jpeg",
     title: "Smart Agency Website",
     subtitle: "Marketing Portfolio",
     link: "https://google.com",
   },
   {
-    image: "../src/assets/portfolio2.jpeg",
+    image: "portfolio2.jpeg",
     title: "E-Commerce Platform",
     subtitle: "Fullstack Com merce",
     link: "https://google.com",
   },
   {
-    image: "../src/assets/portfolio3.jpeg",
+    image: "portfolio3.jpeg",
     title: "Portfolio Redesign",
     subtitle: "Personal Showcase",
     link: "https://google.com",
   },
   {
-    image: "../src/assets/portfolio4.jpeg",
+    image: "/portfolio4.jpeg",
     title: "Portfolio Redesign",
     subtitle: "Personal Showcase",
     link: "https://google.com",
