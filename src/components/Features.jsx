@@ -48,11 +48,13 @@ const Features = () => {
       }}
     >
       <Typography
-        variant="h3"
+        variant="h2"
         sx={{
           fontFamily: "Rajdhani, sans-serif",
           color: "#fff",
           fontWeight: "bold",
+          textAlign : "center",
+          fontWeight : "700",
           mb: 2,
         }}
       >
