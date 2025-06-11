@@ -1,7 +1,8 @@
 /* General Hero Section Styles */
+
 .hero-section {
   padding: 10rem 2rem;
-  padding-top: 10rem;
+  padding-top: 2rem;
   padding-left: 300px;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
@@ -35,6 +36,7 @@ body {
 }
 
 .hero-left h3 {
+  padding-bottom: 0;
   font-size: 2.2rem;
   margin-bottom: 1rem;
   color: #b04340; /* Warm Copper for accent text */
@@ -43,9 +45,7 @@ body {
   font-weight: 500;
 }
 
-.hero-left-title {
-  padding-bottom: 0;
-}
+
 
 .hero-left h2 {
   font-size: 3.2rem;

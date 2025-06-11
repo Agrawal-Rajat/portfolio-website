@@ -6,6 +6,7 @@ const HeroSection = () => {
   return (
     <section className="hero-section" id="home">
       <div className="hero-container">
+        
         <div className="hero-left">
           <h3 className="gamer-text">
             <span className="hero-left-title"></span>HELLO
@@ -22,6 +23,7 @@ const HeroSection = () => {
             View More <span className="arrow">→</span>
           </button>
         </div>
+
         <div className="hero-right">
           <img
             src={profilePicCartoon}
