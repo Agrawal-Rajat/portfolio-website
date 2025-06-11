@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
-
 const projects = [
   {
     image: "portfolio1.jpeg",
@@ -15,7 +14,7 @@ const projects = [
   {
     image: "portfolio2.jpeg",
     title: "E-Commerce Platform",
-    subtitle: "Fullstack Com merce",
+    subtitle: "Fullstack Commerce",
     link: "https://google.com",
   },
   {
@@ -50,7 +49,7 @@ const Portfolio = () => {
 
   return (
     <Box
-    id="portfolio"  
+      id="portfolio"
       ref={portfolioRef}
       sx={{
         py: 8,
@@ -118,27 +117,28 @@ const Portfolio = () => {
       >
         {projects.map((project, index) => (
           <Grid item xs={12} md={6} key={index}>
-            <Box
-              sx={{
-                borderRadius: "16px",
-                overflow: "hidden",
-                boxShadow: "0 8px 20px rgba(0, 0, 0, 0.3)",
-                maxWidth: "500px",
-                margin: "0 auto",
-                border: "2px solid transparent",
-                transition: "border 0.3s ease, box-shadow 0.3s ease",
-                "&:hover": {
-                  cursor: "pointer",
-                  boxShadow: "0 0 12px #E55451",
-                  ".project-title": {
-                    textDecoration: "underline",
-                  },
-                },
-              }}
+            <motion.div
+              whileHover={{ scale: 1.04, y: -6 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
             >
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
+              <Box
+                sx={{
+                  borderRadius: "16px",
+                  overflow: "hidden",
+                  boxShadow: "0 8px 20px rgba(0, 0, 0, 0.3)",
+                  maxWidth: "500px",
+                  margin: "0 auto",
+                  border: "2px solid transparent",
+                  transition: "border 0.3s ease, box-shadow 0.3s ease",
+                  "&:hover": {
+                    cursor: "pointer",
+                    boxShadow: "0 0 25px #E55451",
+                    transform: "translateY(-6px)",
+                    ".project-title": {
+                      textDecoration: "underline",
+                    },
+                  },
+                }}
               >
                 <Box
                   component="img"
@@ -152,51 +152,51 @@ const Portfolio = () => {
                     display: "block",
                   }}
                 />
-              </motion.div>
 
-              {/* Title */}
-              <Box mt={2} display="flex" alignItems="center" px={2}>
-                <MuiLink
-                  href={project.link}
-                  target="_blank"
-                  underline="none"
-                  className="project-title"
+                {/* Title */}
+                <Box mt={2} display="flex" alignItems="center" px={2}>
+                  <MuiLink
+                    href={project.link}
+                    target="_blank"
+                    underline="none"
+                    className="project-title"
+                    sx={{
+                      fontFamily: "Rajdhani, sans-serif",
+                      fontWeight: 600,
+                      fontSize: "1.2rem",
+                      color: "#ffffff",
+                      display: "flex",
+                      alignItems: "center",
+                      transition: "color 0.3s ease",
+                      "&:hover": {
+                        color: "#E55451",
+                      },
+                    }}
+                  >
+                    {project.title}
+                    <OpenInNewIcon
+                      fontSize="small"
+                      sx={{ ml: 0.5, transition: "color 0.3s ease" }}
+                    />
+                  </MuiLink>
+                </Box>
+
+                {/* Subtitle */}
+                <Typography
+                  variant="body2"
                   sx={{
                     fontFamily: "Rajdhani, sans-serif",
-                    fontWeight: 600,
-                    fontSize: "1.2rem",
-                    color: "#ffffff",
-                    display: "flex",
-                    alignItems: "center",
-                    transition: "color 0.3s ease",
-                    "&:hover": {
-                      color: "#E55451",
-                    },
+                    color: "rgba(255,255,255,0.5)",
+                    fontSize: "0.95rem",
+                    mt: 0.5,
+                    px: 2,
+                    pb: 2,
                   }}
                 >
-                  {project.title}
-                  <OpenInNewIcon
-                    fontSize="small"
-                    sx={{ ml: 0.5, transition: "color 0.3s ease" }}
-                  />
-                </MuiLink>
+                  {project.subtitle}
+                </Typography>
               </Box>
-
-              {/* Subtitle */}
-              <Typography
-                variant="body2"
-                sx={{
-                  fontFamily: "Rajdhani, sans-serif",
-                  color: "rgba(255,255,255,0.5)",
-                  fontSize: "0.95rem",
-                  mt: 0.5,
-                  px: 2,
-                  pb: 2,
-                }}
-              >
-                {project.subtitle}
-              </Typography>
-            </Box>
+            </motion.div>
           </Grid>
         ))}
       </Grid>
