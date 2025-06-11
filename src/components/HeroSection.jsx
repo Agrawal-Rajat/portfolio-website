@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
-import profilePicCartoon from "../assets/cartoon-man.jpg";
+import profilePicCartoon from "../assets/cartoon-man-2.jpg";
 
 const HeroSection = () => {
   return (

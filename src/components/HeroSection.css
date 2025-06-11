@@ -44,7 +44,7 @@ body {
 }
 
 .hero-left-title {
-  font-size: 4rem;
+  padding-bottom: 0;
 }
 
 .hero-left h2 {
@@ -120,19 +120,17 @@ body {
   transform: translateX(8px);
 }
 
-
-
 /* Hero Image */
 .hero-right {
   flex: 1;
   max-width: 400px;
-  margin-top: 1.2rem;
+  /* margin-top: 1.2rem; */
 }
 
 .hero-image {
   width: 100%;
   border-radius: 15px;
-  scale: 1.5;
+  scale: 1;
   margin-bottom: 1.2rem;
   object-fit: cover;
 }
