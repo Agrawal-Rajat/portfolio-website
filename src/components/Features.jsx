@@ -17,25 +17,24 @@ const features = [
 
 const Features = () => {
   useEffect(() => {
-    gsap.utils.toArray(".feature-card").forEach((card, index) => {
+  ScrollTrigger.batch(".feature-card", {
+    onEnter: (batch) => {
       gsap.fromTo(
-        card,
-        { opacity: 0, y: 40 },
+        batch,
+        { opacity: 0, y: 30 },
         {
           opacity: 1,
           y: 0,
-          duration: 0.6,
-          delay: index * 0.1,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: card,
-            start: "top 85%",
-            toggleActions: "play none none none",
-          },
+          duration: 0.4,
+          stagger: 0.08,
+          ease: "power2.out",
         }
       );
-    });
-  }, []);
+    },
+    start: "top 90%",
+    once: true,
+  });
+}, []);
 
   return (
     <Box
