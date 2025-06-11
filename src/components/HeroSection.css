@@ -254,6 +254,7 @@ body {
   }
 
   .arrow {
+    font-size: 1.2rem;
     transform: none; /* Prevent arrow shift on tap if needed */
   }
 }
