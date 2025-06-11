@@ -180,3 +180,80 @@ body {
     max-width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .hero-section {
+    padding-left: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .hero-left {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-left h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-left p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .view-more-btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.5rem;
+    margin-top: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    width: auto;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-bottom: 0;
+  }
+
+  .hero-right {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .hero-left h2 {
+    font-size: 2rem;
+  }
+
+  .hero-left p {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+    line-height: 1.6;
+  }
+
+  .view-more-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .arrow {
+    transform: none; /* Prevent arrow shift on tap if needed */
+  }
+}
